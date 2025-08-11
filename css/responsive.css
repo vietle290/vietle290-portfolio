@@ -16,3 +16,66 @@
         max-width: 1028px;
     }
 }
+
+/* ***********************
+    Tablet and small laptop styles
+************************ */
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    /** * Header adjustments for smaller screens */
+
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__column--left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__content--left {
+        align-items: center;
+
+        & p {
+            text-align: center;
+            max-width: 320px;
+        }
+    }
+
+    .header__column--right {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ***********************
+    Phone styles
+************************ */
+
+@media (max-width: 640px) {
+    :root {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .container {
+        max-width: 640px;
+        padding: 0 1rem;
+    }
+
+    /** Header **/
+
+    header {
+        margin-top: 20px
+    }
+
+    .header__badge_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

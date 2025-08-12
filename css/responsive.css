@@ -15,6 +15,16 @@
   .container {
     max-width: 1028px;
   }
+
+    /* Skill */
+  .softSkills_badge {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .softSkills__book_icons {
+    display: none;
+  }
 }
 
 /* ***********************
@@ -67,7 +77,19 @@
     margin: 80px auto;
 
     & img {
-        display: none;
+      display: none;
+    }
+  }
+
+  /* Skill */
+  .skills__grid_container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, minmax(280px, auto));
+
+    & .skill__grid_item {
+      padding: 1rem;
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
     }
   }
 }

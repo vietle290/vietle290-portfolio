@@ -6,15 +6,15 @@
     Desktop Styles
 ************************ */
 @media (max-width: 1536px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 1440px) {
-    .container {
-        max-width: 1028px;
-    }
+  .container {
+    max-width: 1028px;
+  }
 }
 
 /* ***********************
@@ -22,35 +22,54 @@
 ************************ */
 
 @media (max-width: 1280px) {
-    .container {
-        max-width: 1024px;
+  .container {
+    max-width: 1024px;
+  }
+
+  /** * Header adjustments for smaller screens */
+
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__column--left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__content--left {
+    align-items: center;
+
+    & p {
+      text-align: center;
+      max-width: 320px;
     }
+  }
 
-    /** * Header adjustments for smaller screens */
+  .header__column--right {
+    text-align: center;
+    align-items: center;
+  }
+}
 
-    .header__container {
-        flex-direction: column;
-        align-items: center;
+/* ***********************
+    Small Tablet and Landscape styles
+************************ */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  /* About me */
+  .aboutMe__section {
+    margin: 80px auto;
+
+    & img {
+        display: none;
     }
-
-    .header__column--left {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__content--left {
-        align-items: center;
-
-        & p {
-            text-align: center;
-            max-width: 320px;
-        }
-    }
-
-    .header__column--right {
-        text-align: center;
-        align-items: center;
-    }
+  }
 }
 
 /* ***********************
@@ -58,24 +77,41 @@
 ************************ */
 
 @media (max-width: 640px) {
-    :root {
-        font-size: 14px;
-        line-height: 16px;
-    }
+  :root {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
-    .container {
-        max-width: 640px;
-        padding: 0 1rem;
-    }
+  .container {
+    max-width: 640px;
+    padding: 0 1rem;
+  }
 
-    /** Header **/
+  .section__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
 
-    header {
-        margin-top: 20px
-    }
+  /** Header **/
 
-    .header__badge_container {
-        flex-direction: column;
-        align-items: center;
-    }
+  header {
+    margin-top: 20px;
+  }
+
+  .header__badge_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* About me */
+  .aboutMe__container {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+  }
+
+  .aboutMe__content_container {
+    border-radius: 2rem;
+  }
 }

@@ -36,6 +36,10 @@
     max-width: 1024px;
   }
 
+  section {
+    margin: 80px 0;
+  }
+
   /** * Header adjustments for smaller screens */
 
   .header__container {
@@ -136,4 +140,9 @@
   .aboutMe__content_container {
     border-radius: 2rem;
   }
+
+  /* Footer */
+  /* footer {
+    padding: 0;
+  } */
 }
